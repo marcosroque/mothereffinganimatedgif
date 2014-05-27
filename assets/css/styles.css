@@ -718,6 +718,26 @@ body.drag #dropArea h2 span { border-color: #4a4; }
 }
 
 /*************************************************************/
+/*  video
+/*************************************************************/
+.video-canvas {
+    width: 650px;
+    position: relative;
+    margin: 0 auto;
+}
+.video-canvas canvas {
+    border:1px solid #ff9900;
+}
+    .letterred {
+        display: inline-block;
+    }
+    .letterred .letter {
+        color: white;
+        font-size: 15px;
+        text-shadow: 0 0 3px #000000;
+    }
+
+/*************************************************************/
 /*  Footer
 /*************************************************************/
 
