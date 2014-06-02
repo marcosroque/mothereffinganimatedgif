@@ -102,15 +102,16 @@
         </div>
         <div id="video-canvas-holder" class="video-canvas">
             <canvas id="canvas" width="320" height="176"></canvas>
-            <div id="letterred-to-cut" class="letterred">
-                <div class="letter">Teste de lettering</div>
-                <video id="video" width="320" height="176" loop="loop">
-                    <source src="assets/media/mov_bbb.mp4" type="video/mp4">
-                    <source src="assets/media/mov_bbb.ogg" type="video/ogg">
-                    <source src="assets/media/mov_bbb.webm" type="video/webm">
-                    Your browser does not support HTML5 video.
-                </video>
-            </div>
+            <video id="video" width="320" height="176" loop="loop">
+                <source src="assets/media/mov_bbb.mp4" type="video/mp4">
+                <source src="assets/media/mov_bbb.ogg" type="video/ogg">
+                <source src="assets/media/mov_bbb.webm" type="video/webm">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <div class="file-upload">
+            <input id="inputImage" type="file" onchange="pegaArquivo(this.files)">
+            <div id="imgLocal"></div>
         </div>
         
 
@@ -144,8 +145,9 @@
     <script src="assets/js/mfanimated.js"></script>
     <script src="assets/js/models.js"></script>
     <script src="assets/js/ui.js"></script>
-    <script src="assets/js/video-canvas.js"></script>
     <script src="assets/js/startup.js"></script>
+    <script src="assets/js/video-canvas.js"></script>
+    <script src="assets/js/file-upload.js"></script>
 
     <script>
         var _gaq=[['_setAccount','UA-18857974-3'],['_trackPageview']];
